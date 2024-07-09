@@ -1,0 +1,246 @@
+@Font-face {
+  font-family: "Satoshi";
+  src: url(../../public/FontshareKit-2402000475/Satoshi/Fonts/OTF/Satoshi-Black.otf);
+  src: url(../../public/FontshareKit-2402000475/Satoshi/Fonts/OTF/Satoshi-Bold.otf);
+  src: url(../../public/FontshareKit-2402000475/Satoshi/Fonts/OTF/Satoshi-Medium.otf);
+  src: url(../../public/FontshareKit-2402000475/Satoshi/Fonts/OTF/Satoshi-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: "Satoshi", sans-serif;
+  
+  padding: 0;
+  margin: 0;
+  transition: 0.4s all;
+}
+a{
+  text-decoration: none;
+}
+
+.main {
+  display: flex;
+  /* background-color: #f3f0f0; */
+  background-color: rgba(228, 232, 231, 1);
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10%;
+}
+.main-text {
+  width: 40%;
+}
+.main-text p:first-child {
+  color: rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+
+}
+.main-text h1 {
+  font-size: 52px;
+}
+.skin {
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.main img {
+  width: 55%;
+}
+.main button {
+  padding: 10px 58px;
+  border-radius: 8px;
+  background-color: #4f705b;
+  color: #fff;
+  border: 1px solid #4f705b;
+  cursor: pointer;
+}
+.main button:hover {
+  border: 1px solid rgba(79, 112, 91, 1);
+  box-shadow: 0px 4px 4px 0px grey;
+}
+@media screen and (max-width: 990px) {
+  .main {
+    padding-left: 5%;
+    padding-block: 20px;
+  }
+  .main-text h1 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .main-text h1 {
+    font-size: 28px;
+  }
+  .skin {
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .main {
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+  }
+  .main-text {
+    width: 100%;
+    text-align: center;
+  }
+  .main-text h1 {
+    padding-block: 10px;
+  }
+  .main img {
+    width: calc(100% - 10px);
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px 0px gray;
+  }
+}
+
+.feat-prod {
+  padding: 30px 10px;
+}
+.feat{
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+.feat,
+.our {
+  text-align: center;
+}
+.our{
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.products {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  padding-block: 20px;
+  width: 100% !important;
+  flex-wrap: nowrap !important;
+}
+.prods {
+  width: 20%;
+  position: relative;
+}
+.prod-deta {
+  display: flex;
+  justify-content: space-between;
+}
+.prods:hover {
+  transform: scale(1.1, 1.1);
+}
+.prods span {
+  position: absolute;
+  padding: 10px;
+  font-size: 10px;
+  background-color: #4f705b;
+  color: #fff;
+  border-radius: 5px;
+}
+.prod-img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.prods * {
+  /* text-align: center; */
+}
+.price {
+  font-weight: 700;
+  font-size: 16px;
+}
+.stars {
+  color: #4f705b;
+}
+.prod-name {
+  font-weight: 400;
+  font-size: 16px;
+  padding-block: 4px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.add {
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  font-size: 8px;
+  color: #4f705b;
+  font-size: 12px;
+  font-weight: 700;
+  gap: 6px;
+  border-radius: 8px;
+  background: transparent;
+  border: 1px solid #4f705b;
+  cursor: pointer;
+}
+.add img {
+  width: 12px;
+}
+.add:hover{
+  background: #4f705b;
+  color: #fff;
+}
+@media screen and (max-width: 870px) {
+  .products {
+    gap: 15px;
+    justify-content: space-around;
+    overflow-x: scroll;
+  }
+  .prods {
+    width: 250px;
+    min-width: 250px !important;
+  }
+}
+.two-shops {
+  display: flex;
+  justify-content: space-between;
+  padding: 4% 6.5%;
+  gap: 10px;
+}
+.shop1 {
+  background: url("../images/Shop1.png");
+  height: 250px;
+  width: 44%;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+.shop2 {
+  background: url("../images/Shop2.png");
+  height: 250px;
+  width: 44%;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+.two-shops button {
+  margin-top: 10px;
+  padding: 10px 58px;
+  background-color: #fff;
+  color: #4f705b;
+  font-weight: 700;
+  border: 1px solid rgb(211, 209, 209);
+  border-radius: 8px;
+}
+.two-shops button:hover{
+  background-color: #4f705b;
+  color: #fff;
+  cursor: pointer;
+}
+.shop2 p {
+  width: 50%;
+  line-height: 30px;
+}
+@media screen and (max-width: 930px) {
+  .two-shops {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  .shop1,
+  .shop2 {
+    width: calc(100% - 60px);
+  }
+  .shop2 p {
+    opacity: 0.7;
+    width: 70%;
+  }
+}

@@ -1,0 +1,234 @@
+@font-face {
+  font-family: "Satoshi";
+  src: url(../../public/FontshareKit-2402000475/Satoshi/Fonts/OTF/Satoshi-Black.otf);
+  src: url(../../public/FontshareKit-2402000475/Satoshi/Fonts/OTF/Satoshi-Bold.otf);
+  src: url(../../public/FontshareKit-2402000475/Satoshi/Fonts/OTF/Satoshi-Medium.otf);
+  src: url(../../public/FontshareKit-2402000475/Satoshi/Fonts/OTF/Satoshi-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: "Satoshi", sans-serif;
+}
+.table {
+  display: flex;
+  gap: 50px;
+  justify-content: space-around;
+  width: 100%;
+  /* background: url(../images/cartbg.png);
+  background-repeat: no-repeat; */
+}
+.table-head {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  padding-block: 30px;
+}
+.cart-table {
+  border: 1px solid rgb(225, 223, 223);
+  width: 800px;
+}
+input {
+  accent-color: #4f705b;
+  margin-right: 20px;
+}
+.row-1 {
+  padding: 15px 30px;
+  display: flex;
+}
+.check {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  width: 60%;
+  /* background-color: red; */
+}
+.c1,
+.c2 {
+  width: 20%;
+  text-align: center;
+}
+.c1 p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+  font-size: 12px;
+}
+.c1 img {
+  width: 16px;
+}
+.c2 {
+  text-align: right;
+}
+.c1 {
+}
+.check img {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+}
+.row-2 {
+  display: flex;
+  align-items: flex-start;
+  padding: 15px 30px;
+  border-top: 1px solid rgb(225, 223, 223);
+}
+.row-2 h3 {
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 16px;
+}
+.size {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.7);
+}
+.row-2 h2 {
+  font-size: 12px;
+}
+.cart-name {
+  display: flex;
+  gap: 10px;
+}
+.cart-name img {
+  width: 60px;
+  height: 60px;
+}
+.cart-name h2 {
+  font-size: 16px;
+}
+.cart-name p {
+  font-size: 12px;
+}
+.incre {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 8px;
+  gap: 24px;
+  border: 1px solid rgb(225, 223, 223);
+  width: fit-content;
+  margin: auto;
+  padding: 5px 15px;
+  border-radius: 8px;
+}
+.incre button {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  /* padding: 5px; */
+  cursor: pointer;
+}
+.incre p{
+    font-size: 12px;
+}
+.row-2 .c1,
+.row-2 .c2 {
+  border: none;
+}
+.row-2 .c2 {
+  text-align: right;
+  font-size: 12px;
+}
+.c2 h2 {
+  font-size: 12px;
+  font-weight: 700;
+}
+.checkout-proc {
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px -1px rgb(225, 223, 223);
+  border: 1px solid rgb(225, 223, 223);
+  height: fit-content;
+}
+.sub {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid rgb(225, 223, 223);
+}
+.sub p {
+  font-size: 12px;
+  font-weight: 400;
+}
+.sub span {
+  font-size: 12px;
+  font-weight: 500;
+}
+.mode {
+  padding-top: 60px;
+  padding-bottom: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+.sub-sub {
+  cursor: pointer;
+}
+.sub-sub:hover {
+  background-color: rgb(225, 223, 223);
+}
+.sub-sub:focus {
+  background-color: rgb(225, 223, 223);
+}
+.checkout-proc button {
+  background-color: #4f705b;
+  display: block;
+  margin: 20px auto;
+  padding: 15px 100px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+  .checkout-proc button {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .table {
+    flex-direction: column;
+  }
+  .cart-table {
+    width: 100%;
+  }
+  .checkout-proc {
+    width: 100% !important;
+  }
+  .row-1,
+  .row-2 {
+    padding: 5px 10px;
+  }
+  .check,
+  .c1,
+  .c2 {
+    width: 33%;
+  }
+  .check {
+    display: flex;
+    align-items: flex-start;
+  }
+  .check img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+  }
+  .check h3 {
+    font-size: 12px;
+    white-space: nowrap; /* Prevents the text from wrapping to the next line */
+    overflow: hidden; /* Ensures that the overflowed content is hidden */
+    text-overflow: ellipsis; /* Adds the ellipsis (...) */
+    max-width: 50px;
+  }
+  .size {
+    font-size: 8px;
+  }
+  .incre{
+    gap: 8px;
+  }
+  .c2 h2{
+    font-size: 12px;
+  }
+}

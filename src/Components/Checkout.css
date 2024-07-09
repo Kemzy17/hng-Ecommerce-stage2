@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "Satoshi";
+  src: url(../../public/FontshareKit-2402000475/Satoshi/Fonts/OTF/Satoshi-Black.otf);
+  src: url(../../public/FontshareKit-2402000475/Satoshi/Fonts/OTF/Satoshi-Bold.otf);
+  src: url(../../public/FontshareKit-2402000475/Satoshi/Fonts/OTF/Satoshi-Medium.otf);
+  src: url(../../public/FontshareKit-2402000475/Satoshi/Fonts/OTF/Satoshi-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  font-family: "Satoshi", sans-serif;
+  padding: 0;
+  margin: 0;
+  transition: 0.4s all;
+}
+.head-text {
+  font-size: 24px;
+  text-align: center;
+  padding-block: 30px;
+}
+form {
+  display: flex;
+  gap: 80px;
+  /* background-color: red; */
+  padding-bottom: 150px;
+  background: url(..//images/cartbg.png);
+  background-repeat: no-repeat;
+  background-size: 200px;
+  background-position: bottom right;
+}
+.bill {
+  font-size: 12px;
+  padding: 16px 60px;
+  border-bottom: 1px solid rgba(228, 232, 231, 1);
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.form-1 {
+  width: 600px;
+  border-radius: 0px 10px 0px 0px;
+  border: 1px solid rgba(228, 232, 231, 1);
+}
+.f1 {
+  padding: 10px 60px;
+}
+.f1 input {
+  width: calc(100% - 32px);
+  border: 1px solid rgba(228, 232, 231, 1);
+  padding: 16px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+.f2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  gap: 16px;
+}
+.f2 input {
+  margin: 0px;
+  width: 100%;
+  padding: 16px;
+  border: 1px solid rgba(228, 232, 231, 1);
+  border-radius: 8px;
+}
+.rem {
+  /* padding: 16px; */
+  padding: 16px 60px;
+  border: 1px solid rgba(228, 232, 231, 1);
+  border-right: none;
+}
+.rem-head {
+  font-size: 12px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  /* border-bottom: 1px solid rgba(228, 232, 231, 1); */
+}
+label {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  gap: 8px;
+}
+label input {
+  margin: 0;
+}
+.form-2 {
+  width: 600px;
+  height: fit-content;
+  border-radius: 10px;
+  border: 1px solid rgba(228, 232, 231, 1);
+}
+form button {
+  /* max-width: 200px; */
+  background-color: #4f705b;
+  padding: 10px 58px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  display: block;
+  margin: 50px auto;
+  border-radius: 8px;
+}
+input::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+}
+@media screen and (max-width: 855px) {
+  form {
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 715px) {
+  form {
+    flex-direction: column;
+    background-image: none;
+  }
+  .form-1,
+  .form-2 {
+    width: 100%;
+  }
+  .head-text {
+    font-size: 16px;
+  }
+  .bill {
+    font-size: 12px;
+    padding: 16px 20px;
+  }
+  .f1 {
+    padding: 10px 20px;
+  }
+  .rem {
+    padding: 10px 20px;
+  }
+}
