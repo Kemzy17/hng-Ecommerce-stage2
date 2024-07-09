@@ -37,6 +37,7 @@ nav a:hover{
 .nav-corner * {
   margin: 0px;
 }
+
 .search {
   position: relative;
   /* background-color: red; */
@@ -60,6 +61,16 @@ nav a:hover{
   left: 10px;
   top: 12px;
   font-size: 13px;
+}
+.car{
+  position: relative;
+}
+.dot-cart{
+  font-size: 90px;
+  position: absolute;
+  top: -87px;
+  left: 3px;
+  color: red;
 }
 .nav-toggle {
   display: none;

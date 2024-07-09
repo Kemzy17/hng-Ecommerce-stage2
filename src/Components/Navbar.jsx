@@ -44,11 +44,12 @@ export default function Navbar() {
               <input type="search" placeholder="Search" />
               <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-            <Link to="/Cart">
+            <Link className="car" style={{position: 'relative'}} to="/Cart">
               <i
                 style={{ fontSize: "20px" }}
                 class="fa-solid fa-bag-shopping"
               ></i>
+              <span className="dot-cart">.</span>
             </Link>
             <Link to="/*">
               <i style={{ fontSize: "20px" }} class="fa-regular fa-user"></i>
